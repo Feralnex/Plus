@@ -2,7 +2,7 @@
 
 #ifdef _WIN32
 #include <vcruntime.h>
-#else
+#elif __linux__
 #include <sys/types.h>
 #endif
 
