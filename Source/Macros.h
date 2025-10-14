@@ -1,10 +1,14 @@
 #pragma once
 
+#ifdef __linux__
+#include <cstddef>
+#endif
+
 #include <type_traits>
 
 #ifdef _WIN32
 #define EXPORT __declspec(dllexport)
-#else
+#elif __linux__
 #define EXPORT __attribute__((visibility("default")))
 #endif
 
