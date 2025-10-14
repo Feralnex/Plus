@@ -15,4 +15,4 @@ typedef ptrdiff_t SignedSize;
 typedef size_t Size;
 typedef ssize_t SignedSize;
 #endif
-typedef unsigned char Byte;
+typedef char Byte;
